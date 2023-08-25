@@ -68,26 +68,21 @@ app.get('/api/word_game', function(req, res) {
 });
 
 
-app.post('/api/phonebill/prices', function(req, res) {
+app.get('/api/phone_bill', function(req, res) {
 
     const usage = req.query.usage;
 
-  
+    if (!usage) {
+        res.json ({
+            error : 'Please enter the usage to calculate the phone bill from'
+        })
+    }
 
     res.json ({
+        "totalCost" : totalPhoneBill(usage),
         
-        status : 'success',
-        message : `The call was set to 2.85`
     });
-})
-
-app.get('/api/phonebill/prices', function(req, res) {
-console.log(req.param)
-res.json({
-    "call" : 2.75,
- "sms" : 0.65
-})
-})
+});
 
 
 

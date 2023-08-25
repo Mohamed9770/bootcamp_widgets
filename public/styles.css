@@ -1,13 +1,13 @@
 body {
-    background-color: rgb(99, 110, 36);
+    background-color: rgb(226, 187, 101);
   }
 
   .greet {
-    background-color: rgb(108, 143, 143);
+    background-color: rgb(21, 102, 102);
     border: 1px solid;
     margin-bottom: 1em;
     padding: 1em;
-    width: 22em;
+    width: 75em;
     border-radius: 0.25em;
     display: inline-block;
     padding: 0.5em
@@ -15,11 +15,11 @@ body {
   }
 
   .wordgame {
-    background-color:rgb(108, 143, 143);
+    background-color:rgb(15, 91, 91);
     border: 1px solid;
     margin-bottom: 1em;
     padding: 1em;
-    width: 35em;
+    width: 75em;
     border-radius: 0.25em;
     display: inline-block;
     padding: 0.5em
@@ -34,11 +34,11 @@ body {
     border: 1px solid;
     margin-bottom: 1em;
     padding: 1em;
-    width: 22em;
+    width: 75em;
     border-radius: 0.25em;
     display: inline-block;
     padding: 0.5em;
-    background-color: rgb(108, 143, 143);
+    background-color: rgb(12, 70, 70);
 }
 
 button {

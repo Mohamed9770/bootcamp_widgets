@@ -1,15 +1,13 @@
-export default function totalPhoneBill(callsandsms) {
-    let arr=callsandsms.split(',');
-      let calls=0;
-      let smss=0;
-      for (let i=0 ; i<arr.length; i++) {
-        let cost=arr[i].trim();
-        if (cost.startsWith('call')) {
-        calls += 2.75;
-        } else if (cost.startsWith('sms')) {
-          smss += 0.65;
+export default function totalPhoneBill(theString) {
+    var totalCost = 0;
+    var theList = theString.split(', ');
+    for (var i = 0; i < theList.length; i++) {
+        if (theList[i] === ('call')) {
+            totalCost = totalCost + 2.75;
         }
-      }
-      let totalcost = calls + smss;
-      return 'R' + totalcost.toFixed(2);
+        else if (theList[i] === ('sms')) {
+            totalCost = totalCost + 0.65;
+        }
     }
+    return 'R' + totalCost.toFixed(2);
+}
